@@ -7,7 +7,7 @@ function Calculator({ dispatch, theme, result, example }) {
         <div class="wrapper" style={theme == "light" ? {background: "black"} : {background: "white"}}>
             <div class={theme}>
                 <Result result={result} example={example} dispatch={dispatch} theme={theme} />
-                <Keyboard dispatch={dispatch} />
+                <Keyboard dispatch={dispatch} theme={theme} />
             </div>
         </div>
     )

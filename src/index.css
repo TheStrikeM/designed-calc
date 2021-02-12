@@ -87,7 +87,7 @@ body {
   font-weight: 500;
   font-size: 36px;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .wrapper .dark .keyboard .buttons .button__c:hover {
   background: #181616;
@@ -111,7 +111,7 @@ body {
   font-weight: 500;
   font-size: 36px;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .wrapper .dark .keyboard .buttons .button__plmin:hover {
   background: #181616;
@@ -135,7 +135,7 @@ body {
   font-weight: 500;
   font-size: 36px;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .wrapper .dark .keyboard .buttons .button__percent:hover {
   background: #181616;
@@ -159,7 +159,7 @@ body {
   font-weight: 500;
   font-size: 36px;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .wrapper .dark .keyboard .buttons .button__act:hover {
   background: #181616;
@@ -183,7 +183,7 @@ body {
   font-weight: 500;
   font-size: 36px;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .wrapper .dark .keyboard .buttons .button__number:hover {
   background: #181616;
@@ -207,7 +207,7 @@ body {
   font-weight: 500;
   font-size: 36px;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .wrapper .dark .keyboard .buttons .button__null:hover {
   background: #181616;
@@ -231,7 +231,7 @@ body {
   font-weight: 500;
   font-size: 36px;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .wrapper .dark .keyboard .buttons .button__result:hover {
   background: #42d7cb;
@@ -322,7 +322,7 @@ body {
   font-weight: 500;
   font-size: 36px;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .wrapper .light .keyboard .buttons .button__c:hover {
   background: #e2e2e8;
@@ -346,7 +346,7 @@ body {
   font-weight: 500;
   font-size: 36px;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .wrapper .light .keyboard .buttons .button__plmin:hover {
   background: #e2e2e8;
@@ -370,7 +370,7 @@ body {
   font-weight: 500;
   font-size: 36px;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .wrapper .light .keyboard .buttons .button__percent:hover {
   background: #e2e2e8;
@@ -394,7 +394,7 @@ body {
   font-weight: 500;
   font-size: 36px;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .wrapper .light .keyboard .buttons .button__act:hover {
   background: #e2e2e8;
@@ -418,7 +418,7 @@ body {
   font-weight: 500;
   font-size: 36px;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .wrapper .light .keyboard .buttons .button__number:hover {
   background: #e2e2e8;
@@ -442,7 +442,7 @@ body {
   font-weight: 500;
   font-size: 36px;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .wrapper .light .keyboard .buttons .button__null:hover {
   background: #e2e2e8;
@@ -466,7 +466,7 @@ body {
   font-weight: 500;
   font-size: 36px;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .wrapper .light .keyboard .buttons .button__result:hover {
   background: #28bfb2;

@@ -1,6 +1,6 @@
 const initialState = {
     example: "",
-    result: 0
+    result: ""
 }
 
 export default (state = initialState, { type, payload }) => {
@@ -10,13 +10,21 @@ export default (state = initialState, { type, payload }) => {
         return { ...state, example: state.example + payload }
 
     case "SOLVE_EXAMPLE":
-        return { ...state, result: eval(state.example) }
+        try {
+            return { ...state, result: eval(state.example) }
+        }
+
+        catch {
+            return { ...state, result: "" }
+        }
+        return { ...state, result: "" }
+        
 
     case "CLEAR_EXAMPLE":
         return { ...state, example: "" }
 
     case "CLEAR_RESULT":
-        return { ...state, result: 0 }
+        return { ...state, result: "" }
 
     default:
         return state

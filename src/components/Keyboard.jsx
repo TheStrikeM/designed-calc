@@ -1,11 +1,14 @@
 import React from 'react'
 import { clearResult, clearExample, solveExample, addToExample } from '../redux/actions/result'
 
-export default function Keyboard({ dispatch }) {
+export default function Keyboard({ dispatch, theme }) {
+
+    const image_theme = theme == "light" ? "light" : "dark"
+
     return (
         <div class="keyboard">
             <div class="dec">
-                    <img src="http://localhost:9999/assets/dark-polosa.svg" alt="" />
+                    <img src={"http://localhost:9999/assets/" + image_theme + "-polosa.svg"} alt="" />
             </div>
 
             <div class="buttons">
