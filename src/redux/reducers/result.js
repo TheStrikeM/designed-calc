@@ -11,7 +11,7 @@ export default (state = initialState, { type, payload }) => {
 
     case "SOLVE_EXAMPLE":
         try {
-            return { ...state, result: eval(state.example) }
+            return { ...state, result: Math.round(eval(state.example), -1) }
         }
 
         catch {
