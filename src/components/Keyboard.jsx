@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Keyboard() {
+export default function Keyboard({ dispatch }) {
     return (
         <div class="keyboard">
             <div class="dec">
