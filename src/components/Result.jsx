@@ -9,8 +9,8 @@ function Result({ result, example, dispatch, theme }) {
         <div class="result">
 
             <div class="controller">
-                <img src={"http://localhost:9999/assets/" + image_theme + "-moon.svg"}  onClick={() => dispatch(setTheme("dark"))} alt="" class="controller__item" />
-                <img src={"http://localhost:9999/assets/" + image_theme + "-sun.svg"} onClick={() => dispatch(setTheme("light"))} alt="" class="controller__item" />
+                <img src={"https://raw.githubusercontent.com/TheStrikeM/designed-calc/main/src/assets/" + image_theme + "-moon.svg"}  onClick={() => dispatch(setTheme("dark"))} alt="" class="controller__item" />
+                <img src={"https://raw.githubusercontent.com/TheStrikeM/designed-calc/main/src/assets/" + image_theme + "-sun.svg"} onClick={() => dispatch(setTheme("light"))} alt="" class="controller__item" />
             </div>
 
             <div class="result__sample">{example}</div>
