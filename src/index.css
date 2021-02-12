@@ -1,13 +1,481 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.wrapper .dark .result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper .dark .result .controller {
+  margin-top: 20px;
+  background-color: #F0F0F0;
+  width: 120px;
+  height: 38px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 29px;
+}
+.wrapper .dark .result .controller__item {
+  transition: 0.5s all;
+  cursor: pointer;
+}
+.wrapper .dark .result .controller__item:hover {
+  transform: scale(1.1);
+}
+.wrapper .dark .result .controller__item:active {
+  transform: scale(1.1);
+}
+.wrapper .dark .result__sample {
+  margin-top: 80px;
+  align-self: flex-end;
+  margin-right: 15px;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  color: rgba(114, 138, 183, 0.65);
+}
+.wrapper .dark .result__result {
+  align-self: flex-end;
+  margin-top: -10px;
+  margin-right: 15px;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  color: black;
+}
+.wrapper .dark .keyboard {
+  margin-top: 35px;
+  background-color: #0B0A0A;
+  border-radius: 12px 12px 0px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .dark .keyboard .dec {
+  margin: 25px auto;
+}
+.wrapper .dark .keyboard .buttons {
+  margin: 0 35px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 19px;
+  row-gap: 19px;
+  padding-bottom: 15px;
+}
+.wrapper .dark .keyboard .buttons .button__c {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  justify-content: center;
+  color: #FF7171;
+  width: 70px;
+  height: 70px;
+  background: #0B0A0A;
+  box-shadow: -10px -10px 24px rgba(0, 0, 0, 0.6), 10px 10px 24px rgba(51, 51, 56, 0.2);
+  border-radius: 16px;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapper .dark .keyboard .buttons .button__c:hover {
+  background: #181616;
+}
+.wrapper .dark .keyboard .buttons .button__c:active {
+  background: #181616;
+}
+.wrapper .dark .keyboard .buttons .button__plmin {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  justify-content: center;
+  color: #FF7171;
+  width: 70px;
+  height: 70px;
+  background: #0B0A0A;
+  box-shadow: -10px -10px 24px rgba(0, 0, 0, 0.6), 10px 10px 24px rgba(51, 51, 56, 0.2);
+  border-radius: 16px;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapper .dark .keyboard .buttons .button__plmin:hover {
+  background: #181616;
+}
+.wrapper .dark .keyboard .buttons .button__plmin:active {
+  background: #181616;
+}
+.wrapper .dark .keyboard .buttons .button__percent {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  justify-content: center;
+  color: #00FF57;
+  width: 70px;
+  height: 70px;
+  background: #0B0A0A;
+  box-shadow: -10px -10px 24px rgba(0, 0, 0, 0.6), 10px 10px 24px rgba(51, 51, 56, 0.2);
+  border-radius: 16px;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapper .dark .keyboard .buttons .button__percent:hover {
+  background: #181616;
+}
+.wrapper .dark .keyboard .buttons .button__percent:active {
+  background: #181616;
+}
+.wrapper .dark .keyboard .buttons .button__act {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  justify-content: center;
+  color: #745FF2;
+  width: 70px;
+  height: 70px;
+  background: #0B0A0A;
+  box-shadow: -10px -10px 24px rgba(0, 0, 0, 0.6), 10px 10px 24px rgba(51, 51, 56, 0.2);
+  border-radius: 16px;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapper .dark .keyboard .buttons .button__act:hover {
+  background: #181616;
+}
+.wrapper .dark .keyboard .buttons .button__act:active {
+  background: #181616;
+}
+.wrapper .dark .keyboard .buttons .button__number {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  justify-content: center;
+  color: #728AB7;
+  width: 70px;
+  height: 70px;
+  background: #0B0A0A;
+  box-shadow: -10px -10px 24px rgba(0, 0, 0, 0.6), 10px 10px 24px rgba(51, 51, 56, 0.2);
+  border-radius: 16px;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapper .dark .keyboard .buttons .button__number:hover {
+  background: #181616;
+}
+.wrapper .dark .keyboard .buttons .button__number:active {
+  background: #181616;
+}
+.wrapper .dark .keyboard .buttons .button__null {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  justify-content: start;
+  color: #728AB7;
+  width: 139px;
+  height: 70px;
+  background: #0B0A0A;
+  box-shadow: -10px -10px 24px rgba(0, 0, 0, 0.6), 10px 10px 24px rgba(51, 51, 56, 0.2);
+  border-radius: 16px;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapper .dark .keyboard .buttons .button__null:hover {
+  background: #181616;
+}
+.wrapper .dark .keyboard .buttons .button__null:active {
+  background: #181616;
+}
+.wrapper .dark .keyboard .buttons .button__result {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  justify-content: center;
+  color: white;
+  width: 70px;
+  height: 70px;
+  background: #2DD3C5;
+  box-shadow: -10px -10px 24px rgba(0, 0, 0, 0.6), 10px 10px 24px rgba(51, 51, 56, 0.2);
+  border-radius: 16px;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapper .dark .keyboard .buttons .button__result:hover {
+  background: #42d7cb;
+}
+.wrapper .dark .keyboard .buttons .button__result:active {
+  background: #42d7cb;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper .light .result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper .light .result .controller {
+  margin-top: 20px;
+  background-color: #2D2D2E;
+  width: 120px;
+  height: 38px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 29px;
+}
+.wrapper .light .result .controller__item {
+  transition: 0.5s all;
+  cursor: pointer;
+}
+.wrapper .light .result .controller__item:hover {
+  transform: scale(1.1);
+}
+.wrapper .light .result .controller__item:active {
+  transform: scale(1.1);
+}
+.wrapper .light .result__sample {
+  margin-top: 80px;
+  align-self: flex-end;
+  margin-right: 15px;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  color: rgba(114, 138, 183, 0.65);
+}
+.wrapper .light .result__result {
+  align-self: flex-end;
+  margin-top: -10px;
+  margin-right: 15px;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  color: white;
+}
+.wrapper .light .keyboard {
+  margin-top: 35px;
+  background-color: #F0F0F3;
+  border-radius: 12px 12px 0px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .light .keyboard .dec {
+  margin: 25px auto;
+}
+.wrapper .light .keyboard .buttons {
+  margin: 0 35px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 19px;
+  row-gap: 19px;
+  padding-bottom: 15px;
+}
+.wrapper .light .keyboard .buttons .button__c {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  justify-content: center;
+  color: #FF7171;
+  width: 70px;
+  height: 70px;
+  background: #F0F0F3;
+  box-shadow: -10px -10px 24px rgba(255, 255, 255, 0.6), 10px 10px 24px rgba(174, 174, 192, 0.2);
+  border-radius: 16px;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapper .light .keyboard .buttons .button__c:hover {
+  background: #e2e2e8;
+}
+.wrapper .light .keyboard .buttons .button__c:active {
+  background: #e2e2e8;
+}
+.wrapper .light .keyboard .buttons .button__plmin {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  justify-content: center;
+  color: #FF7171;
+  width: 70px;
+  height: 70px;
+  background: #F0F0F3;
+  box-shadow: -10px -10px 24px rgba(255, 255, 255, 0.6), 10px 10px 24px rgba(174, 174, 192, 0.2);
+  border-radius: 16px;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapper .light .keyboard .buttons .button__plmin:hover {
+  background: #e2e2e8;
+}
+.wrapper .light .keyboard .buttons .button__plmin:active {
+  background: #e2e2e8;
+}
+.wrapper .light .keyboard .buttons .button__percent {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  justify-content: center;
+  color: #00FF57;
+  width: 70px;
+  height: 70px;
+  background: #F0F0F3;
+  box-shadow: -10px -10px 24px rgba(255, 255, 255, 0.6), 10px 10px 24px rgba(174, 174, 192, 0.2);
+  border-radius: 16px;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapper .light .keyboard .buttons .button__percent:hover {
+  background: #e2e2e8;
+}
+.wrapper .light .keyboard .buttons .button__percent:active {
+  background: #e2e2e8;
+}
+.wrapper .light .keyboard .buttons .button__act {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  justify-content: center;
+  color: #745FF2;
+  width: 70px;
+  height: 70px;
+  background: #F0F0F3;
+  box-shadow: -10px -10px 24px rgba(255, 255, 255, 0.6), 10px 10px 24px rgba(174, 174, 192, 0.2);
+  border-radius: 16px;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapper .light .keyboard .buttons .button__act:hover {
+  background: #e2e2e8;
+}
+.wrapper .light .keyboard .buttons .button__act:active {
+  background: #e2e2e8;
+}
+.wrapper .light .keyboard .buttons .button__number {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  justify-content: center;
+  color: #728AB7;
+  width: 70px;
+  height: 70px;
+  background: #F0F0F3;
+  box-shadow: -10px -10px 24px rgba(255, 255, 255, 0.6), 10px 10px 24px rgba(174, 174, 192, 0.2);
+  border-radius: 16px;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapper .light .keyboard .buttons .button__number:hover {
+  background: #e2e2e8;
+}
+.wrapper .light .keyboard .buttons .button__number:active {
+  background: #e2e2e8;
+}
+.wrapper .light .keyboard .buttons .button__null {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  justify-content: start;
+  color: #728AB7;
+  width: 139px;
+  height: 70px;
+  background: #F0F0F3;
+  box-shadow: -10px -10px 24px rgba(255, 255, 255, 0.6), 10px 10px 24px rgba(174, 174, 192, 0.2);
+  border-radius: 16px;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapper .light .keyboard .buttons .button__null:hover {
+  background: #e2e2e8;
+}
+.wrapper .light .keyboard .buttons .button__null:active {
+  background: #e2e2e8;
+}
+.wrapper .light .keyboard .buttons .button__result {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  justify-content: center;
+  color: white;
+  width: 70px;
+  height: 70px;
+  background: #2DD3C5;
+  box-shadow: -10px -10px 24px rgba(255, 255, 255, 0.6), 10px 10px 24px rgba(174, 174, 192, 0.2);
+  border-radius: 16px;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapper .light .keyboard .buttons .button__result:hover {
+  background: #28bfb2;
+}
+.wrapper .light .keyboard .buttons .button__result:active {
+  background: #28bfb2;
 }

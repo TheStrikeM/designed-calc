@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
 import Calculator from './components/Calculator';
 import {useDispatch, useSelector} from 'react-redux'
 

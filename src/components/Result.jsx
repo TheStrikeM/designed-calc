@@ -5,8 +5,8 @@ function Result({ result, example }) {
         <div class="result">
 
             <div class="controller">
-                <img src="img/dark/moon.svg" alt="" class="controller__item" />
-                <img src="img/dark/sun.svg" alt="" class="controller__item" />
+                <img src="https://localhost:9999/assets/dark/moon.svg" alt="" class="controller__item" />
+                <img src="https://localhost:9999/assets/dark/sun.svg" alt="" class="controller__item" />
             </div>
 
             <div class="result__sample">120 x 5</div>
