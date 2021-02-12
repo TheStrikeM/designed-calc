@@ -4,10 +4,10 @@ import Result from './Result'
 
 function Calculator({ dispatch, theme, result, example }) {
     return (
-        <div class="wrapper" style={}>
+        <div class="wrapper" style={theme == "light" ? {background: "black"} : {background: "white"}}>
             <div class={theme}>
+                <Result result={result} example={example} dispatch={dispatch} theme={theme} />
                 <Keyboard dispatch={dispatch} />
-                <Result result={result} exmaple={example} />
             </div>
         </div>
     )

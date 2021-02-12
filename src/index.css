@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+
 body {
   margin: 0;
   padding: 0;
@@ -238,11 +238,6 @@ body {
 }
 .wrapper .dark .keyboard .buttons .button__result:active {
   background: #42d7cb;
-}
-
-body {
-  margin: 0;
-  padding: 0;
 }
 
 .wrapper .light .result {
