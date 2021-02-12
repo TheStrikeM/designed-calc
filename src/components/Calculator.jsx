@@ -5,7 +5,7 @@ import Result from './Result'
 function Calculator({ dispatch, theme, result, example }) {
     return (
         <div class="wrapper" style={}>
-            <div class="dark">
+            <div class={theme}>
                 <Keyboard dispatch={dispatch} />
                 <Result result={result} exmaple={example} />
             </div>

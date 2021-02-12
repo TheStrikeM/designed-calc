@@ -1,24 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import Calculator from './components/Calculator';
+import {useDispatch, useSelector} from 'react-redux'
 
 function App() {
+
+  const {result, theme, example} = useSelector(({result, theme}) => {
+    return {
+      result: result.result,
+      example: result.example,
+      theme: theme.theme
+    }
+  })
+  const dispatch = useDispatch()
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Calculator result={result} theme={theme} example={example} dispatch={dispatch} />
+    </>
   );
 }
 
